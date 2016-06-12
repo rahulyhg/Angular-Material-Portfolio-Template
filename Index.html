@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <base href="#/" />
+    <link href="Material/Material.css" rel="stylesheet" />
+    <link href="app/home/home.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="MyApp" ng-app="MyApp">
+    <!-- libraries  -->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-aria.min.js"></script>
+    <script src="Scripts/angular-messages.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Material/Material.js"></script>
+    <script src="Scripts/angular-sanitize.min.js"></script>
+    
+    <script src="app/app.js"></script>
+    <script src="app/appRoutes.js"></script>
+    <script src="app/home/home.js"></script>
+
+    <div style="margin-bottom:60px;">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings">
+              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+            <h2>
+              <span>Toolbar with Icon Buttons</span>
+            </h2>
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+        <div ng-view></div>
+    </div>
+
+</body>
+</html>
