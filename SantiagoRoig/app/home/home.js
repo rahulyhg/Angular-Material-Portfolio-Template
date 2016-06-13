@@ -1,1 +1,1 @@
-﻿MyApp.controller('HomeController', function($scope) {});
+﻿MyApp.controller('HomeController', function ($scope) { });

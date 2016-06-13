@@ -22,23 +22,23 @@
     <script src="app/home/home.js"></script>
 
     <div style="margin-bottom:60px;">
-        <md-toolbar>
-          <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" aria-label="Settings">
-              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-            </md-button>
-            <h2>
-              <span>Toolbar with Icon Buttons</span>
-            </h2>
-            <span flex></span>
-            <md-button class="md-icon-button" aria-label="Favorite">
-              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="More">
-              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-            </md-button>
-          </div>
+        <md-toolbar layout="column" class="md-primary md-whiteframe-10dp">
+            <div class="md-toolbar-tools">
+                <h2>
+                    <span>Santiago Roig</span>
+                </h2>
+            </div>
+
+            <div style="max-height:40px">
+                <span layout="row" layout-align="center">
+                    <u><span style="padding:10px; font-size:12px">Games</span></u>
+                    <u><span style="padding:10px; font-size:12px">Android</span></u>
+                    <u><span style="padding:10px; font-size:12px">3D Models</span></u>
+                </span>
+            </div>
         </md-toolbar>
+
+        <!--Main Content will go Here-->
         <div ng-view></div>
     </div>
 
