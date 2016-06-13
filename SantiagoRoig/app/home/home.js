@@ -1,1 +1,6 @@
-﻿MyApp.controller('HomeController', function ($scope) { });
+﻿MyApp.controller('HomeController', function ($scope) {
+
+    $scope.clicked = function () {
+        alert('hi yellow');
+    }
+});
