@@ -6,7 +6,7 @@
     <link href="app/home/home.css" rel="stylesheet" />
     <title></title>
 </head>
-<body id="MyApp" ng-app="MyApp">
+<body id="MyApp" ng-app="MyApp" layout="column" layout-fill>
     <!-- libraries  -->
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
@@ -19,29 +19,34 @@
     
     <script src="app/app.js"></script>
     <script src="app/appRoutes.js"></script>
-    <script src="app/home/home.js"></script>
 
-    <div style="margin-bottom:60px;">
-        <md-toolbar layout="column" class="md-primary md-whiteframe-10dp">
+    <!--Controllers-->
+    <script src="app/home/home.js"></script>
+    <script src="app/about/about.js"></script>
+    <script src="index.js"></script>
+    <script src="app/gameArt/gameArt.js"></script>
+    <script src="app/games/games.js"></script>
+
+
+    <div ng-controller="IndexController as indexCtrl">
+        <md-toolbar class="md-primary md-whiteframe-10dp">
             <div class="md-toolbar-tools">
                 <h1>
                     <span>Santiago Roig</span>
                 </h1>
             </div>
 
-            <div style="max-height:40px">
-                <span layout="row" layout-align="center">
-                    <md-button>Games</md-button>
-                    <md-button>Android</md-button>
-                    <md-button>3D Models</md-button>
-                    <md-button>About</md-button>
-                </span>
-            </div>
+            <span layout="row" layout-align="center">
+                <md-button ng-click="clicked('')">Home</md-button>
+                <md-button ng-click="clicked('/games')">Games</md-button>
+                <md-button ng-click="clicked('/gameArt')">Game Art</md-button>
+                <md-button ng-click="clicked('/about')">About</md-button>
+            </span>
         </md-toolbar>
-
-        <!--Main Content will go Here-->
-        <div ng-view></div>
     </div>
+
+    <!--Main Content will go Here-->
+    <md-content flex ng-view></md-content>
 
 </body>
 </html>
