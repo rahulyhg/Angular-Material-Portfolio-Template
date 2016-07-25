@@ -1,6 +1,7 @@
 ﻿<div ng-controller="HomeController as homeCtrl" ng-cloak>
-    <md-content layout-padding>
+    <md-content md-padding>
         <md-grid-list md-cols-gt-md="12" md-cols="3" md-cols-md="8"
+                      md-cols-sm="1"
                       md-row-height-gt-md="1:1" md-row-height="4:3"
                       md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
 
@@ -9,6 +10,16 @@
                           md-colspan-gt-sm="{{tile.colspan}}"
                           md-rowspan-gt-sm="{{tile.rowspan}}"
                           class="md-primary md-whiteframe-10dp">
+
+                <!--<div ng-controller="{{tile.view.controller}}">-->
+                <div ng-controller="GameArtController" style="overflow:hidden; height:inherit; zoom:0.5;">
+                    <!--<div ng-include="" src="'app/gameArt/gameArt.html'" style="margin:25px" ></div>-->
+                    <div ng-include="" src="{{tile.view.url}}" style="margin:25px"></div>
+                </div>
+
+                <md-grid-tile-footer style="background-color:black">
+                    <h3>{{tile.view.url}}</h3>
+                </md-grid-tile-footer>
             </md-grid-tile>
 
         </md-grid-list>
