@@ -12,9 +12,9 @@
                           class="md-primary md-whiteframe-10dp">
 
                 <!--<div ng-controller="{{tile.view.controller}}">-->
-                <div ng-controller="GameArtController" style="overflow:hidden; height:inherit; zoom:0.5;">
+                <div layout="row" layout-fill ng-controller="GameArtController" style="zoom:0.5; overflow:hidden;">
                     <!--<div ng-include="" src="'app/gameArt/gameArt.html'" style="margin:25px" ></div>-->
-                    <div ng-include="" src="{{tile.view.url}}" style="margin:25px"></div>
+                    <ng-include layout-align="center center" src="'/app/gameArt/gameArt.html'" style="margin:25px"></ng-include>
                 </div>
 
                 <md-grid-tile-footer style="background-color:black">
