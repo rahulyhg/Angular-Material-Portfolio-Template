@@ -25,7 +25,7 @@
     <script src="app/home/home.js"></script>
     <script src="app/about/about.js"></script>
     <script src="index.js"></script>
-    <script src="app/gameArt/gameArt.js"></script>
+    <script src="app/gameAssets/gameAssets.js"></script>
     <script src="app/games/games.js"></script>
 
 
@@ -40,14 +40,14 @@
             <span layout="row" layout-align="center">
                 <md-button ng-click="clicked('')">Home</md-button>
                 <md-button ng-click="clicked('/games')">Games</md-button>
-                <md-button ng-click="clicked('/gameArt')">Game Art</md-button>
+                <md-button ng-click="clicked('/gameAssets')">Game Assets</md-button>
                 <md-button ng-click="clicked('/about')">About</md-button>
             </span>
         </md-toolbar>
     </div>
 
     <!--Main Content will go Here-->
-    <md-content flex ng-view></md-content>
+    <md-content flex layout-fill ng-view></md-content>
 
 </body>
 </html>
