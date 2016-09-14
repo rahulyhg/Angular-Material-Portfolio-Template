@@ -1,8 +1,35 @@
 ﻿<div ng-controller="AboutController as aboutCtrl" ng-cloak>
-    <md-content layout-padding>
+    <md-content layout-padding layout="column">
         <div style="width:40%; margin-left:50px" layout ="column">
             <p>Santiago Roig is a programmer and video game developer.</p>
             <p>His work ranges from web design to digital art.  He finds satisfaction developing immersive software that invokes emotion in the user.</p>
         </div>
+
+        <md-card style="width:40%; margin-left:50px;"  layout="column" class="md-inline-form">
+            <span class="md-headline">Contact Me</span>
+
+            <form md-padding name="contactForm" action="mailto:roigs23@gmail.com method="post" enctype="text/plain"">
+                <md-input-container>
+                    <label>Name</label>
+                    <input ng-model="contactMe.name" required>
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Email</label>
+                    <input ng-model="contactMe.email" type="email" required>
+                </md-input-container>
+
+                <md-input-container class="md-block">
+                    <label>Message</label>
+                    <textarea ng-model="contactMe.message" md-maxlength="150" rows="5" md-select-on-focus required></textarea>
+                </md-input-container>
+
+                <div layout="row" layout-align="end center">
+                    <md-button type="submit" class="md-primary" ng-disabled="contactForm.$invalid">Send</md-button>
+                </div>
+
+            </form>
+        </md-card>
+
     </md-content>
 </div>
