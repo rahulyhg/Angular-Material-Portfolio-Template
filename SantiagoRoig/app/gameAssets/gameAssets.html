@@ -1,27 +1,45 @@
 ﻿<!DOCTYPE html>
 
-<div ng-controller="GameAssetsController as gameAssetsCtrl" ng-cloak>
-    <md-content layout-padding layout="column">
-        <span>Game Art</span>
-        
-        <iframe width="640" height="480" src="https://sketchfab.com/models/9d663239a35a416587af5c33ac9a049e/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-            <a href="https://sketchfab.com/models/9d663239a35a416587af5c33ac9a049e?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Spaceship</a>
-            by <a href="https://sketchfab.com/binaryocean?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">b1nary0cean</a>
-            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-        </p>
+<md-content ng-controller="GameAssetsController as gameAssetsCtrl" ng-cloak flex>
 
-        <iframe width="640" height="480" src="https://sketchfab.com/models/f321ab23775546b9aa3c30d6c759ffa1/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-            <a href="https://sketchfab.com/models/f321ab23775546b9aa3c30d6c759ffa1?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Katana</a>
-            by <a href="https://sketchfab.com/binaryocean?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">b1nary0cean</a>
-            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-        </p>
+        <md-list>
+            <md-list-item style="min-height:512px">
+                <div layout="row">
+                    <iframe width="512" height="384" src="https://sketchfab.com/models/9d663239a35a416587af5c33ac9a049e/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 
-        <iframe width="640" height="480" src="https://sketchfab.com/models/da5629ea2dda4cdf9ab409a48ba12d2f/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-            <a href="https://sketchfab.com/models/da5629ea2dda4cdf9ab409a48ba12d2f?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Ninja</a>
-            by <a href="https://sketchfab.com/binaryocean?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">b1nary0cean</a>
-            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-        </p>
+                    <div class="md-list-item-text">
+                        <h3>Spaceship</h3>
+                        <h4>Space Scene</h4>
+                    </div>
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
 
+            <md-list-item style="min-height:512px">
+                <div layout="row">
 
-    </md-content>
-</div>
+                    <iframe width="512" height="384" src="https://sketchfab.com/models/da5629ea2dda4cdf9ab409a48ba12d2f/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+                    <div class="md-list-item-text">
+                        <h3>Ninja</h3>
+                        <h4>Low polygon ninja</h4>
+                    </div>
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+
+            <md-list-item style="min-height:512px">
+                <div layout="row">
+
+                    <iframe width="512" height="384" src="https://sketchfab.com/models/f321ab23775546b9aa3c30d6c759ffa1/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+                    <div class="md-list-item-text">
+                        <h3>Katana</h3>
+                        <h4>Low polygon ninja katana</h4>
+                    </div>
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+
+        </md-list>
+</md-content>
